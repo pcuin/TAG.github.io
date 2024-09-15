@@ -4,7 +4,7 @@ parent: Navigation
 nav_order: 2
 ---
 
-# Auxiliary Links
+# WASSUP!
 
 You can add a list of auxiliary links to your site, shown at the top right on all pages. You do this by including the `aux_links` [configuration option]({% link docs/configuration.md %}#aux-links) in your site's `_config.yml` file.
 
