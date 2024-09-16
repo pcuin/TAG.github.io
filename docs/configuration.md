@@ -3,9 +3,28 @@ title: 'Step 2 - Intro to Menu.py'
 nav_order: 2
 ---
 
-{:toc}
+# Table of Contents
+1. [Core structure](#core)
+1. [Menu Template](#template)
+1. [Implementing option Q](#optQ)
+1. [Implementing option ?](#opt?)
+1. [Implementing option A](#optA)
+1. [Implementing option W](#optW)
+1. [Implementing option P](#optP)
+1. [Implementing option V](#optV)
+1. [Implementing option D](#optD)
+1. [Implementing option G](#optG)
+1. [Implementing option O](#optO)
 
-## Core structure
+# Code Comment Convention 
+| Code structure| Notation/Format   | Interpretation|
+|:--------------|:------------------|:------|
+| Function (user)           | good swedish fish | nice  |
+| Variable (=)  | good and plenty   | nice  |
+| Feature (built-in)| good `oreos`      | hmm   |
+| Container | good `zoute` drop | yumm  |
+
+## Core structure <a name="core"></a>
 
 The basis of this entire menu system consistently calls upon these core variables, which requiere consistent updating and manipulation with the prpoer functions. \
 Functions aside, the menu relies on the parameters:
@@ -24,7 +43,7 @@ In scope of the program, the purposes of these variables serve as the framework 
 * `dicto`
 > dict type, mainly used to read user input data, formats user-given data {option: input} (to be discussed later)
 
-## Menu Template
+## Menu Template  <a name="template"></a>
 
 ```py
 from TrafficQueue import *
@@ -84,7 +103,7 @@ def print_menu(menu):
 
 This is the barebone code skeleton to be expanded upon. Next, we'll give the file its display feature.
 
-## Implementing option Q
+## Implementing option Q  <a name="optQ"></a>
 Thanks to while loops, we can implement user display. We can use the previous code to print a bunch of guiding information.
 \
 A while loop has a condition to fulfill until that condition is set to False. Essentially, the options nested within a loop indicate whether or not the loop should break.
@@ -105,6 +124,62 @@ while True:
 
         ... # how would i break a while loop on command?
 ```
-Once we give input (Q) to our file, the loop forcible ends. Now, this option carries out its goal. Let's adapt something more interactive.
+Once we give input (Q) to our file, the loop forcible ends. Hence, this option exits the loop. 
 
-##  
+## Implementing option ?  <a name="opt?"></a>
+Let's leave some directions for users. We'll use some print statements to practice and set the example for upcoming options. 
+```py
+elif key == '?':
+        print("Welcome user, this menu requires a code execution, in listed order below, to ensure functionality is not compromised.\n")
+        print(f"This program utilizes random sample data for fields created with cmd (A).\n")
+        print(f"Next, having made 2 factors, the sample needs weights/probs with cmd (W/P).\n")
+        print(f"If factors need editing, cmd (P/W) will overwrite random data.\n")
+        print(f"Your input data is visible, use cmd (V) to view stored info & dictionaries.\n")
+        print(f"Using cmd (D), stats are analyzed and ready for the traffic model.\n")
+        print(f"Observed data is manipulated using cmd (G) for stats.\n")
+
+        
+        print(f"Data optimization, via cmd (O), can be run right after cmd (A). Optimization:")
+        print("iterates over a range of incremental lane amounts")
+        print("with fixed inputs given, to then return the best type of highway to implement")
+```
+* code can be hard to read sometimes, try to use print() for any return values, or any value you don't seem to be able to identify
+* print() can be used during loops to investigate what happens inside "pandora's box" of python processes 
+
+Now, we can give input (?) to see some logic flow of the program. This explain the programs psuedocode and lets you know where the Menu picks up from.
+
+## Implementing option A  <a name="optA"></a>
+Now, let's initialize our system. We can add factors as explained in the previous chapter. We build the `[factors]` container with looping inputs. 
+```py
+elif key == 'A':
+
+        print("What would you like to add?")
+
+        how_many = 2 
+
+        i = ... # how do you initalize a while loop?
+        while i in range(int(how_many)):
+            fact = input("> Enter one factor here: ")
+            
+            if fact.<py>() is False: # make sure the input IS ALPHAbetical only
+                print("No numbers nor symbols are allowed in making factors. Try again...")
+                continue
+            elif fact.lower() in factors:
+                print(f"{fact} is already an existing factor.")
+                continue
+            
+            factors.<py>(fact.lower()) # how do you add an element to a list
+            i = ? # how do you continue the while loop?
+```
+
+## Implementing option W  <a name="optW"></a>
+
+## Implementing option P  <a name="optP"></a>
+
+## Implementing option V  <a name="optV"></a>
+
+## Implementing option D  <a name="optD"></a>
+
+## Implementing option G  <a name="optG"></a>
+
+## Implementing option O  <a name="optO"></a>
