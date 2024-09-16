@@ -6,6 +6,7 @@ nav_order: 2
 # Table of Contents
 1. [Core structure](#core)
 1. [Menu Template](#template)
+2. [Code Comment Convention](#convention)
 1. [Implementing option Q](#optQ)
 1. [Implementing option ?](#opt?)
 1. [Implementing option A](#optA)
@@ -16,13 +17,27 @@ nav_order: 2
 1. [Implementing option G](#optG)
 1. [Implementing option O](#optO)
 
-# Code Comment Convention 
-| Code structure| Notation/Format   | Interpretation|
+# Code Comment Convention  <a name="convention"></a>
+Code must read in context, as you read along, any coding conventions present in the code chunk MUST BE REWRITTEN. \
+\
+The positioning and format of each convention is intentional, which gives clues to what must be re-written. 
+Comments that don't follow convention, _are conceptual comments_, which will rely on you to fill in a key data strucutre or logical step that is expected at this point in CS8. \
+\
+**Do not use foreign coding techniques. Ensure `elif` matches the indent level with the previous logic statements above.**
+
+| Code structure| Notation Verbatim   | Interpretation|
 |:--------------|:------------------|:------|
-| Function (user)           | good swedish fish | nice  |
-| Variable (=)  | good and plenty   | nice  |
-| Feature (built-in)| good `oreos`      | hmm   |
-| Container | good `zoute` drop | yumm  |
+| Function (user)| f(x), f(x,y), f(...)| Functions that use `def` keyword <br> Ex: f(x) is the abstract hint for `print_menu(menu)`  | 
+| Variable |          ...   | Any assignment operation `var = ...` <br> Ex: cat = ... is the abstract hint for `cat = 'cat'`  |
+| Feature (built-in)| <p‎⁤y>   | **All** operations for this lab can be referenced [here](#cheat) <br> Ex: `str(x)` turns **x** into a **string**| 
+| Container | [],{},() | yumm  |
+> `Container` can be populated with familar objects, here are some:
+* \[factor\]
+* {stats}
+* {dicto}  
+
+**This notation will be referenced when describing several object values, like a `return` value.**
+> `Variable` is usually a *return* value or *updated* value that was initialized at the start of `Menu.py`.
 
 ## Core structure <a name="core"></a>
 
@@ -169,7 +184,7 @@ elif key == 'A':
                 continue
             
             factors.<py>(fact.lower()) # how do you add an element to a list
-            i = ? # how do you continue the while loop?
+            i = ... # how do you continue the while loop?
 ```
 
 ## Implementing option W  <a name="optW"></a>
@@ -183,3 +198,5 @@ elif key == 'A':
 ## Implementing option G  <a name="optG"></a>
 
 ## Implementing option O  <a name="optO"></a>
+
+## Cheat sheet for various python operations <a name="cheat"></a>
