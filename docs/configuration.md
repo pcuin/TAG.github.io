@@ -30,7 +30,7 @@ Comments that don't follow convention, _are conceptual comments_, which will rel
 | Function (user)| f(x), f(x,y), f(...)| Functions that use `def` keyword <br> Ex: f(x) is the abstract hint for `print_menu(menu)`     | 
 | Variable       |          ...        | Any assignment operation `var = ...` <br> Ex: cat = ... is the abstract hint for `cat = 'cat'` |
 | Feature (built-in)| <p‎⁤y>             | **All** operations for this lab can be referenced [here](#cheat) <br> Ex: `str(x)` turns **x** into a **string**| 
-| Container         | [],{},()         | Various datatypes enter these containers. <br> `Empty` lists are denoted as `[]`.|
+| Data Structure         | [],{},()         | Various datatypes enter these containers. <br> `Empty` lists are denoted as `[]`.|
 > `Container` can be populated with familar objects, here are some:
 * \[factor\]
 * {stats}
